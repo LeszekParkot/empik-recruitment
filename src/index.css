@@ -1,4 +1,15 @@
-html {
+html, body {
   background-color: #ccc;
+}
+
+.map__province-area {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  fill: #006400;
+}
+
+.map__province-area:hover {
+  cursor: pointer;
+  fill: #008d00;
 }
 /*# sourceMappingURL=index.css.map */

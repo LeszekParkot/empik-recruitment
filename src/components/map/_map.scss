@@ -1,0 +1,13 @@
+$color-province: #006400;
+
+
+.map{
+    &__province-area{
+        transition: all 0.3s;
+        fill: $color-province;
+    }
+    &__province-area:hover{
+        cursor: pointer;
+        fill: lighten($color-province, 8%);
+    }
+}
