@@ -1,10 +1,11 @@
 {
     "version": 3,
-    "mappings": "ACAA,AAAA,IAAI,EAAE,IAAI,CAAA;EACN,gBAAgB,EAAE,IAAI;CACzB;;ACEI,AAAD,mBAAgB,CAAA;EACZ,UAAU,EAAE,QAAQ;EACpB,IAAI,EANK,OAAO;CAOnB;;AACA,AAAD,mBAAgB,AAAA,MAAM,CAAA;EAClB,MAAM,EAAE,OAAO;EACf,IAAI,EAAE,OAA4B;CACrC",
+    "mappings": "ACAA,AAAA,IAAI,EAAE,IAAI,CAAA;EACN,gBAAgB,EAAE,IAAI;CACzB;;ACEI,AAAD,mBAAgB,CAAA;EACZ,UAAU,EAAE,QAAQ;EACpB,IAAI,EANK,OAAO;CAOnB;;AACA,AAAD,mBAAgB,AAAA,MAAM,CAAA;EAClB,MAAM,EAAE,OAAO;EACf,IAAI,EAAE,OAA4B;CACrC;;ACXL,UAAU,CAAV,MAAU;EACN,EAAE;IACE,OAAO,EAAE,CAAC;;EAEd,IAAI;IACA,OAAO,EAAE,CAAC;;;;AAIlB,AAAA,OAAO,CAAA;EACH,gBAAgB,EAAE,IAAI;EACtB,SAAS,EAAE,cAAc;CAC5B",
     "sources": [
         "index.scss",
         "_App.scss",
-        "components/map/_map.scss"
+        "components/map/_map.scss",
+        "components/slider/_slider.scss"
     ],
     "names": [],
     "file": "index.css"
