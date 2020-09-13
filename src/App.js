@@ -6,12 +6,23 @@ import AppContext from "./context";
 class App extends React.Component{
 
     state = {
-        sliderOff: true
+        sliderOff: true,
+        sliderProvince: ""
     }
 
-    testFunction = (e) => {
-        this.setState({ sliderOff: false });
+    showSlider = (e) => {
+        this.setState({
+            sliderOff: false,
+            sliderProvince: e.target.id
+        });
         console.log(e.target.id);
+    }
+
+    hideSlider = () => {
+        this.setState({
+            sliderOff: true,
+            sliderProvince: ""
+        });
     }
 
 
@@ -20,11 +31,15 @@ class App extends React.Component{
         console.log(this.state.sliderOff);
 
         return (
-            <AppContext.Provider value={{
-                testFunction: this.testFunction }}>
+            <AppContext.Provider
+                value={{ showSlider: this.showSlider }}>
                 <Map />
                 {
-                    this.state.sliderOff || <Slider />
+                    this.state.sliderOff ?
+                    undefined :
+                    <Slider
+                        province = { this.state.sliderProvince }
+                        hideSlider = { this.hideSlider } />
                 }
             </AppContext.Provider>
         );

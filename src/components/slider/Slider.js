@@ -1,49 +1,53 @@
 import React from "react";
-import sliderData from "../../data/slider-data";
+import slidersData from "../../data/sliders-data";
 import { Slide } from 'react-slideshow-image';
 import SingleSlide from "./SingleSlide";
 // import AppContext from "../../context";
 
 
-function Slider(){
+function Slider(props){
 
-    let screenWidth = window.screen.width,
-        imageServe;
+
+    let sliderProvince = slidersData[props.province];
+    let screenWidth = window.screen.width;
+    let imageSize;
 
     function serveImage(slide){
         if(screenWidth <= 1000){
-            imageServe = slide.imageSm;
+            imageSize = "sm";
         }else if(screenWidth <= 1500){
-            imageServe = slide.imageMd;
+            imageSize = "md";
         }else{
-            imageServe = slide.imageLg;
+            imageSize = "lg";
         }
     }
 
 
-return(
+    return(
 
-<section className="slider">
-    <div className="container">
-        <Slide>
+        <section className="slider">
+            <div className="container">
+                <button onClick={ props.hideSlider }>
+                    close
+                </button>
 
-            {
-                sliderData.map((slide, index)=>{
+                <Slide>
+
+                {sliderProvince.map((slide, index)=>{
                     serveImage(slide);
                     return(
                         <SingleSlide
-                            image={ imageServe }
+                            image={ slide.image[imageSize] }
                             description={ slide.description }
                             key={ index } />
                     )
 
-                })
-            }
+                })}
 
-        </Slide>
-    </div>
-</section>
-
-)}
+                </Slide>
+            </div>
+        </section>
+    )
+}
 
 export default Slider;

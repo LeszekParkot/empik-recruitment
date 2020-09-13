@@ -10,7 +10,7 @@ function ProvinceArea(props) {
             return(
                 <path
                     className="map__province-area"
-                    onClick={ context.testFunction }
+                    onClick={ context.showSlider }
                     id={ props.id }
                     d={ props.shape }>
                 </path>
