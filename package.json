@@ -9,7 +9,8 @@
     "bootstrap": "^4.5.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.3"
+    "react-scripts": "3.4.3",
+    "react-slideshow-image": "^3.2.0"
   },
   "scripts": {
     "start": "PORT=3002 react-scripts start",

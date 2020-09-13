@@ -14,17 +14,14 @@ class App extends React.Component{
         console.log(e.target.id);
     }
 
-    testFunction2 = () => {
-        console.log("siema");
-    }
+
 
     render(){
         console.log(this.state.sliderOff);
 
         return (
             <AppContext.Provider value={{
-                testFunction: this.testFunction,
-                testFunction2: this.testFunction2}}>
+                testFunction: this.testFunction }}>
                 <Map />
                 {
                     this.state.sliderOff || <Slider />
