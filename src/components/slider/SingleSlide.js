@@ -3,11 +3,15 @@ import React from "react";
 
 function SingleSlide(props){
     return(
-        <div className="each-slide"
-            style={{
+        <div className="slider__each-slide"
+             style={{
                 "backgroundImage": `url(${props.image})`
-            }}>
-            <span>{ props.description }</span>
+              }}>
+
+            <p className="slider__description">
+                { props.description }
+            </p>
+
         </div>
     )
 }

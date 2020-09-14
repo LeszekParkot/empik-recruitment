@@ -7,7 +7,11 @@ function MapWrapper() {
     return (
         <section className="map">
             <div className="container">
-                <svg stroke="#ffffff" viewBox="0 0 1000 948" xmlns="http://www.w3.org/2000/svg">
+                <svg
+                    className="map__country"
+                    xmlns="http://www.w3.org/2000/svg"
+                    stroke="#ffffff"
+                    viewBox="0 0 1000 948" >
 
                     {
                         mapData.map( province =>(
@@ -17,7 +21,6 @@ function MapWrapper() {
                                 key={ province.id } />
                         ))
                     }
-
                 </svg>
             </div>
         </section>

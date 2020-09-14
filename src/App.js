@@ -2,6 +2,7 @@ import React from 'react';
 import Map from "./components/map/MapWrapper";
 import Slider from "./components/slider/Slider";
 import AppContext from "./context";
+import HeaderPrimary from "./components/header/HeaderPrimary";
 
 class App extends React.Component{
 
@@ -33,16 +34,27 @@ class App extends React.Component{
         return (
             <AppContext.Provider
                 value={{ showSlider: this.showSlider }}>
-                <Map />
-                {
-                    this.state.sliderOff ?
-                    undefined :
-                    <Slider
-                        province = { this.state.sliderProvince }
-                        hideSlider = { this.hideSlider } />
-                }
+
+                <div className="container-header">
+                    <HeaderPrimary>
+                        Zadanie Rekrutacyjne
+                    </HeaderPrimary>
+                </div>
+
+                <div className="container-main">
+                    <Map />
+
+                    {
+                        this.state.sliderOff ?
+                        undefined :
+                        <Slider
+                            province = { this.state.sliderProvince }
+                            hideSlider = { this.hideSlider } />
+                    }
+                </div>
+
             </AppContext.Provider>
-        );
+        )
     }
 
 }

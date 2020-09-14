@@ -1,5 +1,38 @@
-html, body {
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+html {
+  font-family: 'Lato', sans-serif;
+  font-size: 55%;
+}
+
+@media (min-width: 992px) {
+  html {
+    font-size: 62.5%;
+  }
+}
+
+html body {
   background-color: #ccc;
+  font-size: 1.6rem;
+}
+
+html p {
+  margin-bottom: 0;
+}
+
+.container-main {
+  position: relative;
+}
+
+.container-header {
+  padding: 3rem 0;
+}
+
+.map {
+  padding: 3rem 0;
+}
+
+.map__country {
+  max-height: 90vh;
 }
 
 .map__province-area {
@@ -14,6 +47,15 @@ html, body {
 .map__province-area:hover {
   cursor: pointer;
   fill: #008d00;
+}
+
+.map__label {
+  position: absolute;
+}
+
+.map__label.wm {
+  top: 10vw;
+  right: 10vw;
 }
 
 @-webkit-keyframes appear {
@@ -35,15 +77,31 @@ html, body {
 }
 
 .slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   animation: appear 2s ease;
   -webkit-animation: appear 2s ease;
 }
 
-.each-slide {
+.slider__container {
+  height: auto;
+}
+
+.slider__each-slide {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 200px;
+  height: 300px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -53,5 +111,34 @@ html, body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (min-width: 992px) {
+  .slider__each-slide {
+    height: 400px;
+  }
+}
+
+.slider__description {
+  max-width: 80%;
+  padding: 1rem 1.5rem;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.slider button.default-nav {
+  width: 4.5rem;
+  height: 4.5rem;
+  padding-right: 0;
+}
+
+.header-primary {
+  font-size: 3.5rem;
+  text-align: center;
+  margin-bottom: 0;
 }
 /*# sourceMappingURL=index.css.map */
