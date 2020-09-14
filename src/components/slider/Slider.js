@@ -24,27 +24,28 @@ function Slider(props) {
 
    return (
 
-   <section className="slider">
-      <div className="slider__container container">
+      <section className="slider">
+         <div className="slider__container container">
 
-         <button onClick={props.hideSlider}>
-            close
-         </button>
+            <button className="slider__btn-close"
+               onClick={props.hideSlider}>
+               X
+            </button>
 
-         <Slide>
-            {sliderProvince.map((slide, index) => {
-               serveImage(slide);
-               return (
-                  <SingleSlide
-                     image={slide.image[imageSize]}
-                     description={slide.description}
-                     key={index} />
-               )
-            })}
-         </Slide>
+            <Slide>
+               {sliderProvince.map((slide, index) => {
+                  serveImage(slide);
+                  return (
+                     <SingleSlide
+                        image={slide.image[imageSize]}
+                        description={slide.description}
+                        key={index} />
+                  )
+               })}
+            </Slide>
 
-      </div>
-   </section>
+         </div>
+      </section>
 
    )
 }

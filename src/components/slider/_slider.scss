@@ -10,35 +10,64 @@
 .slider{
     display: flex;
     position: absolute;
-    top: 0;
+    top: 50%;
     left: 0;
     width: 100%;
-    height: 100%;
+    transform: translateY(-50%);
     background-color: rgba(#000, 0.2);
     align-items: center;
     animation: appear 2s ease;
-    -webkit-animation: appear 2s ease;
+    -webkit-animation: appear 0.8s ease;
 
     &__container{
-        height: auto;
+        position: relative;
+    }
+
+    &__btn-close{
+        background-color: #fff;
+        position: absolute;
+        top: -5rem;
+        right: 0;
+        width: 5rem;
+        height: 5rem;
+        transition: all 0.3s;
+        border: 0.1rem solid #000;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        outline: none;
+        font-size: 3.2rem;
+        font-weight: bold;
+        opacity: 0.4;
+        &:hover{
+            opacity: 1;
+        }
     }
 
     &__each-slide{
         display: flex;
-        height: 300px;
-        @media(min-width: 992px){
-            height: 400px;
-        }
+        height: 250px;
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
         justify-content: center;
         align-items: center;
+        @media(min-width: 768px){
+            height: 400px;
+        }
+        @media(min-width: 992px){
+            height: 500px;
+        }
+        @media(min-width: 1200px){
+            height: 600px;
+        }
     }
 
     &__description{
         max-width: 80%;
-        padding: 1rem 1.5rem;
+        padding: 0.7rem 1rem;
         border-radius: 1rem;
         -webkit-border-radius: 1rem;
         -moz-border-radius: 1rem;
@@ -48,8 +77,8 @@
     }
 
     button.default-nav{
-        width: 4.5rem;
-        height: 4.5rem;
+        width: 4rem;
+        height: 4rem;
         padding-right: 0;
     }
 }

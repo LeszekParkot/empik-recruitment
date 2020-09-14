@@ -3,22 +3,22 @@ import AppContext from "../../context";
 
 
 function ProvinceArea(props) {
-    return (
+   return (
 
-        <AppContext.Consumer>
-        {(context) => {
-            return(
-                <path
-                    className="map__province-area"
-                    onClick={ context.showSlider }
-                    id={ props.id }
-                    d={ props.shape }>
-                </path>
+      <AppContext.Consumer>
+         {(context) => {
+            return (
+               <path
+                  className="map__province-area"
+                  onClick={context.showSlider}
+                  id={props.id}
+                  d={props.shape}>
+               </path>
             )
-        }}
-        </AppContext.Consumer>
+         }}
+      </AppContext.Consumer>
 
-    )
+   )
 }
 
 export default ProvinceArea;

@@ -22,7 +22,7 @@ const warminskoMazurskie = [
          md: require("../../images/img-2-md.jpg"),
          lg: require("../../images/img-2-lg.jpg")
       },
-      description: "lorem 2"
+      description: "Warmińsko-Mazurskie 1"
    },
    {
       image: {
@@ -30,7 +30,7 @@ const warminskoMazurskie = [
          md: require("../../images/img-3-md.jpg"),
          lg: require("../../images/img-3-lg.jpg")
       },
-      description: "lorem 3"
+      description: "Warmińsko-Mazurskie 2"
    },
    {
       image: {
@@ -38,7 +38,7 @@ const warminskoMazurskie = [
          md: require("../../images/img-4-md.jpg"),
          lg: require("../../images/img-4-lg.jpg")
       },
-      description: "lorem 4"
+      description: "Warmińsko-Mazurskie 3"
    },
    {
       image: {
@@ -46,7 +46,7 @@ const warminskoMazurskie = [
          md: require("../../images/img-5-md.jpg"),
          lg: require("../../images/img-5-lg.jpg")
       },
-      description: "lorem 5"
+      description: "Warmińsko-Mazurskie 4"
    },
 
 ]
