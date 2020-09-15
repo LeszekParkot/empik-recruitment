@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c5c578c9873dfca5373595fd0aebe79c",
+    "revision": "bcc83745a57310a39b31b5da88c5751c",
     "url": "/empik-recruitment/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/empik-recruitment/static/css/2.91f8ca11.chunk.css"
   },
   {
-    "revision": "fcf0d17c183d215ac61d",
-    "url": "/empik-recruitment/static/css/main.bdf12c32.chunk.css"
+    "revision": "15298b2cd87323d872db",
+    "url": "/empik-recruitment/static/css/main.c48abb66.chunk.css"
   },
   {
     "revision": "c4223fb807c12bd88b95",
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/empik-recruitment/static/js/2.17284476.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "fcf0d17c183d215ac61d",
-    "url": "/empik-recruitment/static/js/main.31cf383e.chunk.js"
+    "revision": "15298b2cd87323d872db",
+    "url": "/empik-recruitment/static/js/main.d77ed5c0.chunk.js"
   },
   {
     "revision": "34d95e6ee3d645d1e541",
