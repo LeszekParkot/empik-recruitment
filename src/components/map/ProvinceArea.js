@@ -10,6 +10,7 @@ function ProvinceArea(props) {
             return (
                <path
                   className="map__province-area"
+                  // gets province id which goes to Slider, change App state
                   onClick={context.showSlider}
                   id={props.id}
                   d={props.shape}>

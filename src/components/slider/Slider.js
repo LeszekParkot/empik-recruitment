@@ -6,11 +6,13 @@ import SingleSlide from "./SingleSlide";
 
 function Slider(props) {
 
-
+   // received chosen province
    let sliderProvince = slidersData[props.province];
    let screenWidth = window.screen.width;
    let imageSize;
 
+
+   // check screen resolution and match image size
    function serveImage(slide) {
       if (screenWidth <= 1000) {
          imageSize = "sm";
@@ -33,15 +35,18 @@ function Slider(props) {
             </button>
 
             <Slide>
-               {sliderProvince.map((slide, index) => {
-                  serveImage(slide);
-                  return (
-                     <SingleSlide
-                        image={slide.image[imageSize]}
-                        description={slide.description}
-                        key={index} />
-                  )
-               })}
+               {
+                  //create slider
+                  sliderProvince.map((slide, index) => {
+                     serveImage(slide);
+                     return (
+                        <SingleSlide
+                           image={slide.image[imageSize]}
+                           description={slide.description}
+                           key={index} />
+                     )
+                  })
+               }
             </Slide>
 
          </div>

@@ -14,6 +14,7 @@ function MapWrapper() {
                viewBox="0 0 1000 948" >
 
                {
+                  // create map
                   mapData.map(province => (
                      <ProvinceArea
                         shape={province.shape}
@@ -24,7 +25,7 @@ function MapWrapper() {
             </svg>
          </div>
       </section>
-   );
-};
+   )
+}
 
 export default MapWrapper;

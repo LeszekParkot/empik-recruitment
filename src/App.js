@@ -11,14 +11,15 @@ class App extends React.Component {
       sliderProvince: ""
    }
 
+   // function passed to ProvinceArea, shows slider for chosen province
    showSlider = (e) => {
       this.setState({
          sliderOff: false,
          sliderProvince: e.target.id
       });
-      console.log(e.target.id);
    }
 
+   // function passed to Slider, hides slider
    hideSlider = () => {
       this.setState({
          sliderOff: true,
@@ -27,24 +28,20 @@ class App extends React.Component {
    }
 
 
-
    render() {
-      console.log(this.state.sliderOff);
-
       return (
-         <AppContext.Provider
-            value={{ showSlider: this.showSlider }}>
+         <AppContext.Provider value={{ showSlider: this.showSlider }}>
 
             <div className="container-header">
                <HeaderPrimary>
                   Zadanie Rekrutacyjne
-                    </HeaderPrimary>
+               </HeaderPrimary>
             </div>
 
             <div className="container-main">
                <Map />
-
                {
+               // conditional rendering slider
                   this.state.sliderOff ?
                      undefined :
                      <Slider
@@ -56,7 +53,6 @@ class App extends React.Component {
          </AppContext.Provider>
       )
    }
-
 }
 
 export default App;
