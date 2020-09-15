@@ -5,6 +5,15 @@ $color-province: #006400;
     padding: 3rem 0;
     &__country{
         max-height: 90vh;
+        @media(nim-width: 576px){
+            min-height: 48.3rem;
+        }
+        @media(nim-width: 768px){
+            min-height: 65.4rem;
+        }
+        @media(nim-width: 992px){
+            min-height: 83.5rem;
+        }
     }
     &__province-area{
         transition: all 0.3s;
@@ -18,11 +27,8 @@ $color-province: #006400;
         cursor: pointer;
         fill: lighten($color-province, 8%);
     }
-    &__label{
-        position: absolute;
-    }
-    &__label.wm{
-        top: 10vw;
-        right: 10vw;
+
+    .container{
+        text-align: center;
     }
 }
