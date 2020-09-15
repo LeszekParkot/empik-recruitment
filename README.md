@@ -1,3 +1,5 @@
+https://leszekparkot.github.io/empik-recruitment/
+
 Projekt zapoczątkowany przy pomocy Create-React-App.
 
 Tworzenie i modyfikacja mapy oraz slider'ów za pomocą plików z folderu data.
