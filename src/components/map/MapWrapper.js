@@ -1,6 +1,6 @@
 import React from "react";
 import ProvinceArea from "./ProvinceArea";
-import mapData from "../../data/map-data";
+import { provinceData, mapData } from "../../data/map/map-data";
 
 
 function MapWrapper() {
@@ -10,12 +10,12 @@ function MapWrapper() {
             <svg
                className="map__country"
                xmlns="http://www.w3.org/2000/svg"
-               stroke="#ffffff"
-               viewBox="0 0 1000 948" >
+               stroke={mapData.strokeColor}
+               viewBox={mapData.dimensions} >
 
                {
                   // create map
-                  mapData.map(province => (
+                  provinceData.map(province => (
                      <ProvinceArea
                         shape={province.shape}
                         id={province.id}

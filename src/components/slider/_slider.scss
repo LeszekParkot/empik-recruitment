@@ -46,6 +46,10 @@
         }
     }
 
+    .react-slideshow-wrapper.slide{
+        width: 97%;
+    }
+
     &__each-slide{
         display: flex;
         height: 250px;
@@ -77,8 +81,8 @@
     }
 
     button.default-nav{
-        width: 4rem;
-        height: 4rem;
+        width: 4.5rem;
+        height: 4.5rem;
         padding-right: 0;
     }
 }

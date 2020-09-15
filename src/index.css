@@ -123,6 +123,10 @@ html p {
   opacity: 1;
 }
 
+.slider .react-slideshow-wrapper.slide {
+  width: 97%;
+}
+
 .slider__each-slide {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -169,8 +173,8 @@ html p {
 }
 
 .slider button.default-nav {
-  width: 4rem;
-  height: 4rem;
+  width: 4.5rem;
+  height: 4.5rem;
   padding-right: 0;
 }
 
@@ -179,3 +183,4 @@ html p {
   text-align: center;
   margin-bottom: 0;
 }
+/*# sourceMappingURL=index.css.map */

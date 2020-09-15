@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 
 function SingleSlide(props) {
@@ -14,6 +15,11 @@ function SingleSlide(props) {
 
       </div>
    )
+}
+
+SingleSlide.propTypes = {
+   image: PropTypes.string,
+   description: PropTypes.string
 }
 
 export default SingleSlide;

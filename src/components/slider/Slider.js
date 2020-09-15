@@ -1,5 +1,5 @@
 import React from "react";
-import slidersData from "../../data/sliders-data";
+import slidersData from "../../data/slider/concatenate-sliders";
 import { Slide } from 'react-slideshow-image';
 import SingleSlide from "./SingleSlide";
 

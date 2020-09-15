@@ -1,8 +1,8 @@
 import React from 'react';
-import Map from "./components/map/MapWrapper";
-import Slider from "./components/slider/Slider";
-import AppContext from "./context";
-import HeaderPrimary from "./components/header/HeaderPrimary";
+import Map from "../map/MapWrapper";
+import Slider from "../slider/Slider";
+import AppContext from "../../context";
+import HeaderPrimary from "../header/HeaderPrimary";
 
 class App extends React.Component {
 

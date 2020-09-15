@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import AppContext from "../../context";
 
 
@@ -10,7 +11,7 @@ function ProvinceArea(props) {
             return (
                <path
                   className="map__province-area"
-                  // gets province id which goes to Slider, change App state
+                  // change App state and gets province id which goes to Slider
                   onClick={context.showSlider}
                   id={props.id}
                   d={props.shape}>
@@ -20,6 +21,11 @@ function ProvinceArea(props) {
       </AppContext.Consumer>
 
    )
+}
+
+ProvinceArea.propTypes = {
+   id: PropTypes.string,
+   ishaped: PropTypes.string
 }
 
 export default ProvinceArea;
