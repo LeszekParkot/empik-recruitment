@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/empik-recruitment/precache-manifest.dcec5cfe34a6ea17cda5a39b2bc08891.js"
+  "/empik-recruitment/precache-manifest.c5e7218baa5a99909e6b42e38a34a38d.js"
 );
 
 self.addEventListener('message', (event) => {
