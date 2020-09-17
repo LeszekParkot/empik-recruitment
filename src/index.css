@@ -35,21 +35,21 @@ html p {
   max-height: 90vh;
 }
 
-@media (nim-width: 576px) {
+@media (min-width: 576px) {
   .map__country {
     min-height: 48.3rem;
   }
 }
 
-@media (nim-width: 768px) {
+@media (min-width: 768px) {
   .map__country {
     min-height: 65.4rem;
   }
 }
 
-@media (nim-width: 992px) {
+@media (min-width: 992px) {
   .map__country {
-    min-height: 83.5rem;
+    min-height: 90vh;
   }
 }
 
