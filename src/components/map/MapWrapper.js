@@ -28,4 +28,4 @@ function MapWrapper() {
    )
 }
 
-export default MapWrapper;
+export default React.memo(MapWrapper);

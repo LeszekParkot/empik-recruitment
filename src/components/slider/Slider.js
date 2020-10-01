@@ -29,7 +29,8 @@ function Slider(props) {
       <section className="slider">
          <div className="slider__container container">
 
-            <button className="slider__btn-close"
+            <button
+               className="slider__btn-close"
                onClick={props.hideSlider}>
                X
             </button>

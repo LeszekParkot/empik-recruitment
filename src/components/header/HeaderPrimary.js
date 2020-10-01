@@ -9,4 +9,4 @@ function HeaderPrimary(props) {
    )
 }
 
-export default HeaderPrimary;
+export default React.memo(HeaderPrimary);
